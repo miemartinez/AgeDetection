@@ -7,9 +7,9 @@ In addition, the project trains the best found model and uses this for an unseen
 The cropped version is then used for age prediction.
 
 The repository contains two scripts in the src folder. Both scripts can be run without inputs (as they have defaults) or the user can specify these. <br>
-The first script (grid_search.py) is used to find the best hyperparameters for a convolutional neural network to predict age from facial images. 
+The first script (__grid_search.py__) is used to find the best hyperparameters for a convolutional neural network to predict age from facial images. 
 It looks at number of nodes in the fully connected layer, dropout rate and optimizers and returns model architecture and history for each individual model. <br> 
-The second script (detect_my_age.py) uses the best found hyperparameters and trains a convolutional neural network. 
+The second script (__detect_my_age.py__) uses the best found hyperparameters and trains a convolutional neural network. 
 Similarly, the script takes an image and a region of interest (containing a face in the image). 
 It then crops and saves the image of the ROI and uses this for model prediction. 
 The script returns the model architecture, history, classification report and label predictions for the unseen image. <br>
