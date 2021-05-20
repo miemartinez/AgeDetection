@@ -4,7 +4,9 @@
 __Task:__ The task for this project is to investigate age detection and see if it is possible to train a model that can detect how old a person is from an image. 
 Furthermore, the project include grid search to find the best hyperparameters for the model. 
 In addition, the project trains the best found model and uses this for an unseen image. The unseen image can be one that contain background noise as a bounding box can be defined for cropping the image.
-The cropped version is then used for age prediction.
+The cropped version is then used for age prediction. <br>
+
+For this project, I used facial image data with age labels retrieved from Kaggle. The data can be found on this link: https://www.kaggle.com/frabbisw/facial-age and should be downloaded and placed in the data folder prior to running the script. The data is structured as folders for each age containing face images. <br>
 
 The repository contains two scripts in the src folder. Both scripts can be run without inputs (as they have defaults) or the user can specify these. <br>
 The first script (__grid_search.py__) is used to find the best hyperparameters for a convolutional neural network to predict age from facial images. 
@@ -13,6 +15,7 @@ The second script (__detect_my_age.py__) uses the best found hyperparameters and
 Similarly, the script takes an image and a region of interest (containing a face in the image). 
 It then crops and saves the image of the ROI and uses this for model prediction. 
 The script returns the model architecture, history, classification report and label predictions for the unseen image. <br>
+
 In the Github repo there is a folder in the data folder called test_data. In this, I have included two images:
 1. One of myself called IMG_3864.JPG 
 2. One of my family called DSC04818.JPG. <br>
