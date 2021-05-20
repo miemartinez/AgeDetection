@@ -65,7 +65,7 @@ __Example:__ <br>
 
 ### How to run detect_my_age.py <br>
 
-This script uses a path to a folder directory where the labels are equal to the folder names. It trains a convolutional neural network on face data to classify these into ages. 
+As with grid_search.py, this script uses a path to a folder directory where the labels are equal to the folder names. It trains a convolutional neural network on face data to classify these into ages. 
 Similarly, the script takes an image and a region of interest (containing a face in the image). It then crops and saves the image of the ROI and uses this for model prediction. 
 
 If using the same folder structure as in the repo, the script can be run from the terminal without specifying parameters.
