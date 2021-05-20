@@ -10,11 +10,11 @@ For this project, I used facial image data with age labels retrieved from Kaggle
 
 The repository contains two scripts in the src folder. Both scripts can be run without inputs (as they have defaults) or the user can specify these. <br>
 The first script (__grid_search.py__) is used to find the best hyperparameters for a convolutional neural network to predict age from facial images. 
-It looks at number of nodes in the fully connected layer, dropout rate and optimizers and returns model architecture and history for each individual model. <br> 
+It looks at number of nodes in the fully connected layer, dropout rate and optimizers and returns model architecture and history for each individual model in the out folder. As I have run the grid search on 20 and 100 epochs, results from these are saved in "out/grid_search_20_epochs" and "out/grid_search_100_epochs", respectively. <br> 
 The second script (__detect_my_age.py__) uses the best found hyperparameters and trains a convolutional neural network. 
 Similarly, the script takes an image and a region of interest (containing a face in the image). 
 It then crops and saves the image of the ROI and uses this for model prediction. 
-The script returns the model architecture, history, classification report and label predictions for the unseen image. <br>
+The script returns the model architecture, history, classification report and label predictions for the unseen image. These outputs can be found in "out/age_detection". <br>
 
 In the Github repo there is a folder in the data folder called test_data. In this, I have included two images:
 1. One of myself called IMG_3864.JPG 
