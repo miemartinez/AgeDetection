@@ -96,7 +96,7 @@ __Example:__ <br>
 
 ```
 
-The code has been developed in Jupyter Notebook and tested in the terminal on Jupyter Hub on worker02. I therefore recommend cloning the Github repository to worker02 and running the scripts from there. 
+The code has been developed in Jupyter Notebook and tested in the terminal on Jupyter Hub on worker02 and with the terminal in the Coder Python application on Ucloud. I therefore recommend cloning the Github repository to worker02 or Ucloud and running the scripts from there.
 
 ### Results:
 The results of the grid search showed a clear overfitting of the model on the training data across hyperparameter tuning. 
