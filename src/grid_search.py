@@ -37,7 +37,7 @@ import argparse
 import os
 import sys
 sys.path.append(os.path.join(".."))
-from utils.grid_search_util2 import GridSearch
+from utils.grid_search_util import GridSearch
 
 # argparse
 ap = argparse.ArgumentParser()
